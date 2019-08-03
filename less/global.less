@@ -16,7 +16,9 @@ h1, h2, h3, h4, h5 {
   font-family: 'Russo One', sans-serif;
   color: @header-font-color;
 }
-
+h1 {
+  font-size: 3.7rem;
+}
 h2 {
   font-size: 3.2rem;
 }
@@ -28,6 +30,17 @@ h3 {
 p {
   font-size: 1.6rem;
   line-height: 1.4;
+}
+a {
+  text-decoration: none;
+  color: @river-bend;
+  font-size: 1.6rem;
+  &:hover {
+    color: rgb(73, 162, 192);
+  }
+  &:active{ 
+    color: lighten(rgb(73, 162, 192), 30%);
+  }
 }
 
 .container {
