@@ -202,15 +202,55 @@ h5 {
 h1 {
   font-size: 3.7rem;
 }
+@media (max-width: 800px) {
+  h1 {
+    font-size: 3.4rem;
+  }
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
 h2 {
   font-size: 3.2rem;
+}
+@media (max-width: 800px) {
+  h2 {
+    font-size: 2.7rem;
+  }
+}
+@media (max-width: 500px) {
+  h2 {
+    dont-size: 2.3rem;
+  }
 }
 h3 {
   font-size: 2.8rem;
 }
+@media (max-width: 800px) {
+  h3 {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 500px) {
+  h3 {
+    font-size: 2.2rem;
+  }
+}
 p {
   font-size: 1.6rem;
   line-height: 1.4;
+}
+@media (max-width: 800px) {
+  p {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 500px) {
+  p {
+    font-size: 1.1rem;
+  }
 }
 a {
   text-decoration: none;
@@ -222,6 +262,29 @@ a:hover {
 }
 a:active {
   color: #bbdce7;
+}
+@media (max-width: 800px) {
+  a {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 500px) {
+  a {
+    font-size: 1.2rem;
+  }
+}
+button {
+  font-size: 1.7rem;
+}
+@media (max-width: 800px) {
+  button {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 500px) {
+  button {
+    font-size: 1.2rem;
+  }
 }
 .container {
   max-width: 800px;
@@ -257,22 +320,6 @@ a:active {
     padding-bottom: 5px;
   }
 }
-@media (max-width: 500px) {
-  header div {
-    margin: 10px;
-    padding: 0px 5%;
-  }
-}
-header img {
-  border-radius: 4px;
-}
-@media (max-width: 800px) {
-  header img {
-    width: 100%;
-    margin: auto;
-    padding: auto;
-  }
-}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -285,7 +332,7 @@ footer {
 }
 @media (max-width: 500px) {
   .home .intro div {
-    margin: 10px;
+    margin: 10px auto;
     padding: 0px 5%;
   }
 }
@@ -334,8 +381,7 @@ footer {
 @media (max-width: 500px) {
   .home .space-images img {
     width: 100%;
-    margin: 15px auto;
-    padding: 0px 5%;
+    margin: 15px 5%;
   }
 }
 @media (max-width: 800px) {
@@ -383,11 +429,6 @@ footer {
 .home .walk .walk-text {
   width: 50%;
 }
-@media (max-width: 800px) {
-  .home .walk .walk-text {
-    width: 80%;
-  }
-}
 @media (max-width: 500px) {
   .home .walk .walk-text {
     width: 100%;
@@ -403,7 +444,6 @@ footer {
   padding: 5px 15px 5px 15px;
   color: #F6F7F8;
   background-color: #23293B;
-  font-size: 1.7rem;
   border-radius: 4px;
   border: 1px solid #F6F7F8;
 }
