@@ -9,14 +9,19 @@
     border-bottom: 2px solid @sea-shell;
     nav {
         .setup-flex(row,space-between);
-        width: 35%;
+        width: 38%;
         padding-top: 10px;
         padding-bottom: 10px;
+        @media @tablet {
+            width: 60%;
+        }
+        @media @phone {
+            width: 80%;
+            padding-bottom: 5px;
+        }
     }
 
 }
 header {
-    img {
-        border-radius: 4px;
-    }
+    
 }
