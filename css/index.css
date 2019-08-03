@@ -144,42 +144,6 @@ button {
   /* Corrects inability to style clickable `input` types in iOS */
   -webkit-appearance: none;
 }
-button:hover {
-  border: none;
-  margin: 0;
-  padding: 0;
-  width: auto;
-  overflow: visible;
-  background: transparent;
-  /* inherit font & color from ancestor */
-  color: inherit;
-  font: inherit;
-  /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
-  line-height: normal;
-  /* Corrects font smoothing for webkit */
-  -webkit-font-smoothing: inherit;
-  -moz-osx-font-smoothing: inherit;
-  /* Corrects inability to style clickable `input` types in iOS */
-  -webkit-appearance: none;
-}
-button:active {
-  border: none;
-  margin: 0;
-  padding: 0;
-  width: auto;
-  overflow: visible;
-  background: transparent;
-  /* inherit font & color from ancestor */
-  color: inherit;
-  font: inherit;
-  /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
-  line-height: normal;
-  /* Corrects font smoothing for webkit */
-  -webkit-font-smoothing: inherit;
-  -moz-osx-font-smoothing: inherit;
-  /* Corrects inability to style clickable `input` types in iOS */
-  -webkit-appearance: none;
-}
 * {
   box-sizing: border-box;
 }
@@ -476,4 +440,43 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+.home #contact-form {
+  margin: 20px;
+}
+.home #contact-form h3 {
+  margin: 10px auto;
+}
+.home #contact-form form input[type=text],
+.home #contact-form form select,
+.home #contact-form form textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+.home #contact-form form button {
+  margin-top: 10px;
+  padding: 5px 15px 5px 15px;
+  color: #F6F7F8;
+  background-color: #23293B;
+  border-radius: 4px;
+  border: 1px solid #F6F7F8;
+}
+.home #contact-form form button:hover {
+  color: #23293B;
+  background-color: #F6F7F8;
+}
+.home #contact-form form button:active {
+  border-color: #23293B;
+}
+@media (max-width: 500px) {
+  .home #contact-form form button {
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
 }
