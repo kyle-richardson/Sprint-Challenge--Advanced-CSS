@@ -126,6 +126,60 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+button {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  background: transparent;
+  /* inherit font & color from ancestor */
+  color: inherit;
+  font: inherit;
+  /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+  line-height: normal;
+  /* Corrects font smoothing for webkit */
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+  /* Corrects inability to style clickable `input` types in iOS */
+  -webkit-appearance: none;
+}
+button:hover {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  background: transparent;
+  /* inherit font & color from ancestor */
+  color: inherit;
+  font: inherit;
+  /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+  line-height: normal;
+  /* Corrects font smoothing for webkit */
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+  /* Corrects inability to style clickable `input` types in iOS */
+  -webkit-appearance: none;
+}
+button:active {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  background: transparent;
+  /* inherit font & color from ancestor */
+  color: inherit;
+  font: inherit;
+  /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+  line-height: normal;
+  /* Corrects font smoothing for webkit */
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+  /* Corrects inability to style clickable `input` types in iOS */
+  -webkit-appearance: none;
+}
 * {
   box-sizing: border-box;
 }
@@ -177,6 +231,7 @@ a:active {
 #navigation {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   width: 100%;
   background-color: #F6F6F6;
@@ -252,9 +307,17 @@ footer {
 .home .walk .walk-text .btn button {
   padding: 5px 15px 5px 15px;
   color: #F6F7F8;
-  background-color: black;
+  background-color: #23293B;
   font-size: 1.7rem;
   border-radius: 4px;
+  border: 1px solid #F6F7F8;
+}
+.home .walk .walk-text .btn button:hover {
+  color: #23293B;
+  background-color: #F6F7F8;
+}
+.home .walk .walk-text .btn button:active {
+  border-color: #23293B;
 }
 .home .walk .walk-img {
   width: 46%;

@@ -1,17 +1,14 @@
 
 
 #navigation {
-    display: flex;
-    flex-direction: column;
+    .setup-flex(column,center);
     align-items: center;
     width: 100%; 
     background-color: @nav-bg;
     padding-top: 15px;
     border-bottom: 2px solid @sea-shell;
     nav {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        .setup-flex(row,space-between);
         width: 35%;
         padding-top: 10px;
         padding-bottom: 10px;
