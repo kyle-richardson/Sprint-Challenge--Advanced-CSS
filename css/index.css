@@ -256,12 +256,13 @@ button {
   margin: 0 auto;
 }
 #navigation {
+  position: fixed;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
-  background-color: #F6F6F6;
+  background-color: rgba(170, 170, 170, 0.85);
   padding-top: 15px;
   border-bottom: 2px solid #F1F1F1;
 }
@@ -293,6 +294,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home .intro {
+  padding-top: 80px;
 }
 @media (max-width: 500px) {
   .home .intro div {
