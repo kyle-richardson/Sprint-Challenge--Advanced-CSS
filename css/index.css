@@ -179,8 +179,9 @@ a:active {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  background-color: lightgray;
+  background-color: #F6F6F6;
   padding-top: 15px;
+  border-bottom: 2px solid #F1F1F1;
 }
 #navigation nav {
   display: flex;
@@ -189,6 +190,12 @@ a:active {
   width: 35%;
   padding-top: 10px;
   padding-bottom: 10px;
+}
+header {
+  color: #23293B;
+}
+header img {
+  border-radius: 4px;
 }
 footer {
   color: #22283B;
@@ -241,6 +248,13 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn button {
+  padding: 5px 15px 5px 15px;
+  color: #F6F7F8;
+  background-color: black;
+  font-size: 1.7rem;
+  border-radius: 4px;
 }
 .home .walk .walk-img {
   width: 46%;
