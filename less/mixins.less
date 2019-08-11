@@ -1,1 +1,25 @@
 // Mixins Here
+
+.create-btn(@light-clr,@dark-clr) {
+    padding: 5px 15px 5px 15px;
+    color: @light-clr;
+    background-color: @dark-clr;
+    border-radius: 4px;
+    border: 1px solid @light-clr;
+    &:hover {
+        color: @dark-clr;
+        background-color: @light-clr;
+    }
+    &:active {
+        border-color: @dark-clr;  
+    }
+}
+.set-page-width(@width){
+    max-width: @width;
+}
+
+.setup-flex(@direct, @jstfy){
+    display: flex;
+    flex-direction: @direct;
+    justify-content: @jstfy;
+}

@@ -1,1 +1,25 @@
-// Navigation code here
+
+
+#navigation {
+    position: fixed;
+    .setup-flex(column,center);
+    align-items: center;
+    width: 100%; 
+    background-color: @nav-bg;
+    padding-top: 15px;
+    border-bottom: 2px solid @sea-shell;
+    nav {
+        .setup-flex(row,space-between);
+        width: 38%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        @media @tablet {
+            width: 60%;
+        }
+        @media @phone {
+            width: 80%;
+            padding-bottom: 5px;
+        }
+    }
+
+}

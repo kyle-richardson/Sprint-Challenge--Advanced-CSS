@@ -34,13 +34,29 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+adaptive website: allows for @media break points to make it more friendly and aware of different screen sizes, but uses set pixel amounts for page width and other sizing elements at the break points.
+
+responsive website: incorporates adaptive website idea of @media breakpoints with the flexibility of fluid layout, using % based sizing to fit the width at break points and beyond.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+mobile first: website is first designed for mobile size screens (page width, font sizing, padding, margins, global set parameters), then uses @media min-width calls to make the page responsive to larger size screens up to desktop sizing with a potential max width size
+
+desktop first: the exact opposite.  all global set elements are designed for desktop experience first, then uses @media max-width breakpoints to make the website elements fully responsive to smaller screen sizes.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+It allows the website to be more accesible.  Using a percentage allows changes in browser settings for accessibility and potentially visually impaired users to make the overall font size bigger and having the website respond with the increase in the size.  rem tag allows us to change font sizes of all the different elements on the page in direct relationship with the base font size (62.5%), instead of either (a) using set pixel sizes or (b) em units, which operate in a percentage based relationship with its immediate parent, which could become confusing viewing the code as an outsider.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+Preprocessing allows more customizability to CSS, allowing built-in functions and the ability to create your own variables and mix-ins, which helps simplify the code (DRY) while also allowing easy changes to certain aspects.  Instead of having to change all color variables if you decide to change the color scheme of the website, you can simply change the variable calls at the beginning and all instances of it will change in the .css file.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+I love variables, and the escaped variables for @mobile, @tablet, etc, to make it very simple to make your page responsive without having to type out long phrases over and over.
+
+The concept that gives me the most trouble is the nesting aspect of @media calls.  It is very simplistic to see just one @media call for each breakpoint to see what changes are made to each size, instead of having to put multiple @media calls within the nesting elements of .less or other preprocessors.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 

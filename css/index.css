@@ -1,0 +1,486 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+button {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  background: transparent;
+  /* inherit font & color from ancestor */
+  color: inherit;
+  font: inherit;
+  /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+  line-height: normal;
+  /* Corrects font smoothing for webkit */
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+  /* Corrects inability to style clickable `input` types in iOS */
+  -webkit-appearance: none;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+  color: #5E6164;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Russo One', sans-serif;
+  color: #23293B;
+}
+h1 {
+  font-size: 3.7rem;
+}
+@media (max-width: 800px) {
+  h1 {
+    font-size: 3.4rem;
+  }
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
+h2 {
+  font-size: 3.2rem;
+}
+@media (max-width: 800px) {
+  h2 {
+    font-size: 2.7rem;
+  }
+}
+@media (max-width: 500px) {
+  h2 {
+    dont-size: 2.3rem;
+  }
+}
+h3 {
+  font-size: 2.8rem;
+}
+@media (max-width: 800px) {
+  h3 {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 500px) {
+  h3 {
+    font-size: 2.2rem;
+  }
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+@media (max-width: 800px) {
+  p {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 500px) {
+  p {
+    font-size: 1.1rem;
+  }
+}
+a {
+  text-decoration: none;
+  color: #454A59;
+  font-size: 1.6rem;
+}
+a:hover {
+  color: #49a2c0;
+}
+a:active {
+  color: #bbdce7;
+}
+@media (max-width: 800px) {
+  a {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 500px) {
+  a {
+    font-size: 1.2rem;
+  }
+}
+button {
+  font-size: 1.7rem;
+}
+@media (max-width: 800px) {
+  button {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 500px) {
+  button {
+    font-size: 1.2rem;
+  }
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+#navigation {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: rgba(170, 170, 170, 0.85);
+  padding-top: 15px;
+  border-bottom: 2px solid #F1F1F1;
+}
+#navigation nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 38%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+@media (max-width: 800px) {
+  #navigation nav {
+    width: 60%;
+  }
+}
+@media (max-width: 500px) {
+  #navigation nav {
+    width: 80%;
+    padding-bottom: 5px;
+  }
+}
+footer {
+  color: #22283B;
+  background: #f4f4f4;
+  padding: 20px 0;
+  border: 1px double #e0e0e0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home .intro {
+  padding-top: 80px;
+}
+@media (max-width: 500px) {
+  .home .intro div {
+    margin: 10px auto;
+    padding: 0px 5%;
+  }
+}
+.home .intro img {
+  border-radius: 4px;
+}
+@media (max-width: 800px) {
+  .home .intro img {
+    width: 100%;
+    margin: auto;
+    padding: auto;
+  }
+}
+.home .intro h2 {
+  padding: 15px;
+}
+@media (max-width: 500px) {
+  .home .intro h2 {
+    padding: 10px 0px;
+  }
+}
+.home .intro p {
+  padding: 0 15px;
+}
+@media (max-width: 500px) {
+  .home .intro p {
+    padding: 0px;
+  }
+}
+.home .space-images {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.home .space-images img {
+  width: 28%;
+  margin: 20px 2.5%;
+  border-radius: 20px;
+  height: 100%;
+}
+@media (max-width: 800px) {
+  .home .space-images img {
+    width: 45%;
+  }
+}
+@media (max-width: 500px) {
+  .home .space-images img {
+    width: 100%;
+    margin: 15px 5%;
+  }
+}
+@media (max-width: 800px) {
+  .home .space-images .launch {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .home .space-images .sky {
+    display: none;
+  }
+}
+.home .visit-planets {
+  padding: 15px;
+}
+@media (max-width: 800px) {
+  .home .visit-planets {
+    padding: 0px 5%;
+  }
+}
+.home .visit-planets h3 {
+  margin-top: 11px;
+}
+.home .visit-planets p {
+  margin-top: 13px;
+}
+.home .walk {
+  margin-top: 60px;
+  border-top: 1px solid #dee2e6;
+  padding: 50px 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+@media (max-width: 500px) {
+  .home .walk {
+    width: 100%;
+    margin: 15px auto;
+    padding: 0px 5%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+}
+.home .walk .walk-text {
+  width: 50%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text {
+    width: 100%;
+  }
+}
+.home .walk .walk-text h3 {
+  margin-bottom: 10px;
+}
+.home .walk .walk-text p {
+  margin-bottom: 26px;
+}
+.home .walk .walk-text .btn button {
+  padding: 5px 15px 5px 15px;
+  color: #F6F7F8;
+  background-color: #23293B;
+  border-radius: 4px;
+  border: 1px solid #F6F7F8;
+}
+.home .walk .walk-text .btn button:hover {
+  color: #23293B;
+  background-color: #F6F7F8;
+}
+.home .walk .walk-text .btn button:active {
+  border-color: #23293B;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn button {
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+.home .walk .walk-img {
+  width: 46%;
+  margin-left: 4%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img {
+    width: 100%;
+    margin: 15px auto;
+    padding: auto;
+  }
+}
+.home .walk .walk-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.home #contact-form {
+  margin: 20px;
+}
+.home #contact-form h3 {
+  margin: 10px auto;
+}
+.home #contact-form form input[type=text],
+.home #contact-form form select,
+.home #contact-form form textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+.home #contact-form form button {
+  margin-top: 10px;
+  padding: 5px 15px 5px 15px;
+  color: #F6F7F8;
+  background-color: #23293B;
+  border-radius: 4px;
+  border: 1px solid #F6F7F8;
+}
+.home #contact-form form button:hover {
+  color: #23293B;
+  background-color: #F6F7F8;
+}
+.home #contact-form form button:active {
+  border-color: #23293B;
+}
+@media (max-width: 500px) {
+  .home #contact-form form button {
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
